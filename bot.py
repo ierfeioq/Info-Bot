@@ -10,9 +10,9 @@ Bot = Client(
     api_hash=os.environ.get("API_HASH")
 )
 
-START_TEXT = """<b>Hello {}
+START_TEXT = """<b>𝐻𝑜𝑙𝑎 𝑏𝑖𝑒𝑛𝑣𝑒𝑛𝑖𝑑𝑜 {}
 
-I am a Simple Telegram Info Gathering Bot, Click /help to know my Commands and my uses<b>"""
+soy un asistente de @lord_zeper Y mi nombre es C-3PO\nPara saber mas de mí ingresa: /ayuda<b>"""
 
 HELP_TEXT = """🤔 How to use me?
 
@@ -32,7 +32,6 @@ ABOUT_TEXT = """--**About Me**--
 - **Library :** [Pyrogram v1.2.0](https://pyrogram.org)
 - **Server :** [Heroku](https://heroku.com)"""
 
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton(text="SOURCE", url=f"https://github.com/vivek-tp/Info-Bot")]])
 
 
 @Bot.on_message(filters.private & filters.command("start"))
